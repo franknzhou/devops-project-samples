@@ -14,11 +14,9 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-steps:
-- task: NuGetToolInstaller@1  
 - task: NuGetToolInstaller@1
   inputs:
-    versionSpec: 'NuGet 6.0'
+    versionSpec: 'NuGet 6.4.0'
     checkLatest: true
 - task: NuGetCommand@2
   inputs:
