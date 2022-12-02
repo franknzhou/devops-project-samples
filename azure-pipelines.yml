@@ -15,13 +15,11 @@ variables:
   buildConfiguration: 'Release'
 steps:
 - task: NuGetToolInstaller@1
-  displayName: 'Use NuGet 4.6.x'
-  inputs:
-    versionSpec: 4.6.x
+
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-    noCache: true
+
 
 - task: VSBuild@1
   inputs:
